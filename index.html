@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Application Project</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<style>
+
+		body{
+		}
+
+		.container{
+			width: 100%;
+			position: relative;
+		}
+		
+		.nav-area{
+			position: fixed;
+			width: 20%;
+			margin-bottom: 5%;
+		}
+
+		.display-area{
+			height: 90vh;
+			width: 80%;
+			border: 1px solid green;
+			box-shadow: 5px 5px 5px 5px grey;
+			overflow: scroll;
+		}
+
+		/*In portrait mode*/
+		.nav-area-portrait{
+			position: fixed;
+			width: 50%;
+			transform: translateX(-50%);
+		}
+
+		.display-area-portrait{
+			height: 90vh;
+			width: 100%;
+			border: 1px solid green;
+			box-shadow: 5px 5px 5px 5px grey;
+			overflow: scroll;
+		}
+
+		.left{
+			float: left;
+		}
+
+		.right{
+			float: right;
+		}
+
+		.right-zero{
+			right:0;
+		}
+
+		.left-zero{
+			left:0;
+		}
+
+		.top-zero{
+			top:5%;
+			left: 50%;
+		}
+
+		.margin-top{
+			margin-top: 15%;
+		}
+
+	</style>
+
+</head>
+
+<body onload="getLocation();">
+<!-- <body> -->
+<div class="container">
+	<nav class="nav-area" id="nav-area">
+		<button onclick="show_Chunks();">Keep Reading</button>
+		<!-- <button onclick="getLocation();">Get Location</button> -->
+		<p id="location"></p> 
+	</nav>
+
+	<div class="display-area" id="display-area">
+		<section id = "section0"></section>
+		<section id = "section1"></section>
+		<section id = "section2"></section>
+		<section id = "section3"></section>
+		<section id = "section4"></section>
+		<section id = "section5"></section>
+		<section id = "section6"></section>
+		<section id = "section7"></section>
+		<section id = "section8"></section>
+	</div>
+</div>
+
+<!-- <script type="text/javascript" src="https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyDvIX83Ozyqy8-P2i7R_8t61YyeXKa4pK0"></script> -->
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyDvIX83Ozyqy8-P2i7R_8t61YyeXKa4pK0&callback=initialize">
+    </script>
+
+<script type="text/javascript" src="main.js"></script>
+
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>
